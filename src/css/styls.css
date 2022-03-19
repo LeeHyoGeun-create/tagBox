@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-blue: #5372f0;
+  --color-white: #fff;
+  --color-gray: #a6a6a6;
+  --color--lightGray: #f2f2f2;
+  --color--regularGray: #dfdfdf;
+  --color--darkGray: #808080;
+  --color--lightPink: #e3d1e1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--color-blue);
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 49rem;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  padding: 1.8rem 2.5rem 2rem;
+}
+
+.wrapper .title {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.wrapper :where(li i, .title, li, .details) {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .title i {
+  margin-right: 0.4rem;
+}
+
+.wrapper .content {
+  margin: 1rem 0;
+}
+
+.content p {
+  font-size: 1.5rem;
+}
+
+.content ul {
+  display: flex;
+  padding: 0.7rem;
+  border: 1px solid var(--color-gray);
+  margin: 1.2rem 0;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+.content ul li {
+  list-style: none;
+  background-color: var(--color--lightGray);
+  padding: 0.5rem 0.8rem 0.5rem 1rem;
+  margin: 0.4rem 0.3rem;
+  border-radius: 5px;
+  border: 1px solid var(--color--lightPink);
+}
+
+.content ul li i {
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.2rem;
+  background-color: var(--color--regularGray);
+  cursor: pointer;
+  color: var(--color--darkGray);
+  margin-left: 0.8rem;
+  border-radius: 50%;
+  line-height: inherit;
+  justify-content: center;
+  text-align: center;
+}
+
+.content ul input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.wrapper .details {
+  justify-content: space-between;
+}
+
+.details button {
+  border: none;
+  outline: none;
+  background-color: var(--color-blue);
+  padding: 0.9rem 1.5rem;
+  border-radius: 5px;
+  color: var(--color-white);
+  font-size: 1.4rem;
+}
